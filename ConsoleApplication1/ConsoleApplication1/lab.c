@@ -2,7 +2,7 @@
 #include <windows.h>
 
 #define COUNT_THREAD 10
-HANDLE _semaphore;
+HANDLE _semaphore = NULL;
 
 DWORD WINAPI Limeted_Thread(LPVOID lp_PARAM) {
     int thread_id = *(int*)lp_PARAM;
