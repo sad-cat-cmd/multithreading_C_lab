@@ -4,109 +4,94 @@
 #include <stdlib.h>
 
 #define COUNT_PROCESSES_OBJECT 3
-wchar_t exe_path[] = L"C:\Windows\system32\cmd.exe";
 
-struct Memory_mapped_file;
-void freeing_resources_mmf(struct Memory_mapped_file*);
-struct Memory_mapped_file* create_resources_mmf();
-void create_multiple_process(STARTUPINFO*, PROCESS_INFORMATION*, BOOL*);
-void close_multiple_process(PROCESS_INFORMATION*);
+TCHAR MUTEX_NAME[] = TEXT("mutex_MMF");
+TCHAR lpFileShareName[] = TEXT("$MyVerySpecialFileShareName$");
 
-struct Memory_mapped_file
-{
-	HANDLE h_Map_File;
-	LPVOID pDate;
-};
+inline int create_open_MMF(HANDLE *hMapFile, char **shared_data) {
+	return 1; 
+}
 
 
 int main() {
-	STARTUPINFO _sts_info[COUNT_PROCESSES_OBJECT];
-	PROCESS_INFORMATION _processes_info[COUNT_PROCESSES_OBJECT];
-	BOOL _status_process[COUNT_PROCESSES_OBJECT];
+	STARTUPINFO client_1, client_2;
+	PROCESS_INFORMATION pi_1, pi_2;
+	HANDLE hMapFile, hMutex;
 
-	create_multiple_process(_sts_info, _processes_info, _status_process);
+	ZeroMemory(&client_1, sizeof(client_1));
+	client_1.cb = sizeof(client_1);
+	ZeroMemory(&pi_1, sizeof(pi_1));
 
-	for (size_t i = 0; i < COUNT_PROCESSES_OBJECT; i++) {
-		if (!_status_process[i]) {
-			printf("Process %zu creation failed: \n", i);
-		}
-	}
+	ZeroMemory(&client_2, sizeof(client_2));
+	client_2.cb = sizeof(client_2);
+	ZeroMemory(&pi_2, sizeof(pi_2));
 
-	struct Memory_mapped_file* _mmf = create_resources_mmf();
-	if (_mmf == NULL){
-		printf("Failed to create MMF resources\n");
-		close_multiple_process(_processes_info);
-		return 1;
-	}
-
-	freeing_resources_mmf(_mmf);
-	
-
-	for (size_t i = 0; i < COUNT_PROCESSES_OBJECT; i++) {
-		CloseHandle(_processes_info[i].hProcess);
-	}
-	return 0;
-}
-
-void freeing_resources_mmf(struct Memory_mapped_file* _MMF) {
-	if (_MMF == NULL) return;
-	
-	if (_MMF->pDate != NULL) {
-		UnmapViewOfFile(_MMF->pDate);
-	}
-	UnmapViewOfFile(_MMF->pDate);
-	if (_MMF->h_Map_File != NULL && _MMF->h_Map_File != INVALID_HANDLE_VALUE) {
-		CloseHandle(_MMF->h_Map_File);
-	}
-	free(_MMF);
-}
-struct Memory_mapped_file* create_resources_mmf() {
-	struct Memory_mapped_file* temp_MMF = malloc(sizeof(struct Memory_mapped_file));
-	temp_MMF->h_Map_File = NULL;
-	temp_MMF->pDate = NULL;
-
-	temp_MMF->h_Map_File = CreateFileMapping(INVALID_HANDLE_VALUE,
+	hMapFile = CreateFileMapping(INVALID_HANDLE_VALUE,
 		NULL,
 		PAGE_READWRITE,
 		0,
 		4096,
-		L"Global\\MyShareMemory");
-	temp_MMF->pDate = MapViewOfFile(temp_MMF->h_Map_File,
-		FILE_MAP_ALL_ACCESS,
-		0,
-		0,
-		4096);
-
-	if (temp_MMF->pDate == NULL) {
-		printf("MapViewOfFile failed: %lu\n", GetLastError());
-		CloseHandle(temp_MMF->h_Map_File);
-		return NULL;
+		lpFileShareName);
+	if (hMapFile == NULL) {
+		printf("Error: create FileMapping\n");
+		return 1;
 	}
-	return temp_MMF;
-}
-
-void create_multiple_process(STARTUPINFO* _sts_info, PROCESS_INFORMATION* _process_info, BOOL* _status_process) {
-	for (size_t i = 0; i < COUNT_PROCESSES_OBJECT; i++) {
-		ZeroMemory(&_sts_info[i], sizeof(_sts_info[i]));
-		_sts_info[i].cb = sizeof(_sts_info[i]);
-		ZeroMemory(&_process_info[i], sizeof(_process_info[i]));
-
-		_status_process[i] = CreateProcess(NULL,
-										   exe_path,
-			                               NULL,
-										   NULL,
-										   FALSE,
-										   0,
-										   NULL,
-										   NULL,
-										   &_sts_info[i],
-										   &_process_info[i]);
+	
+	char* shared_data = (char*)MapViewOfFile(hMapFile, FILE_MAP_ALL_ACCESS, 0, 0, 4096);
+	if (shared_data == NULL) {
+		printf("Error: MapWievOfFile in main process %lu \n", GetLastError());
+		return 1;
 	}
-	return;
-}
+	shared_data[0] = '\0';
+	printf("Server is started\n");
 
-void close_multiple_process(PROCESS_INFORMATION* _process_info) {
-	for (size_t i = 0; i < COUNT_PROCESSES_OBJECT; i++) {
-		CloseHandle(_process_info[i].hProcess);
+	hMutex = CreateMutex(NULL, FALSE, MUTEX_NAME);
+	
+	if (hMutex == NULL)
+	{
+		printf("CreateMutex error: %d\n", GetLastError());
+		return 1;
 	}
+
+	if (CreateProcess(L"C:\\Users\\B-ZONE\\Desktop\\SPO_GIT\\multithreading_C_lab\\App_3\\Project1\\client.exe", L"client.exe 1", NULL, NULL, FALSE, 0, NULL, NULL, &client_1, &pi_1)) {
+		printf("Client 1 is started\n");
+	}
+	else {
+		printf("Error: create Process CLIENT_1 %lu\n", GetLastError());
+		return 1;
+	}
+
+	if (CreateProcess(L"C:\\Users\\B-ZONE\\Desktop\\SPO_GIT\\multithreading_C_lab\\App_3\\Project1\\client.exe", L"client.exe 2", NULL, NULL, FALSE, 0, NULL, NULL, &client_2, &pi_2)) {
+		printf("Client 2 is started\n");
+	}
+	else {
+		printf("Error: create Process CLIENT_1 %lu\n", GetLastError());
+		return 1;
+	}
+
+	int massege_count = 0;
+
+	WaitForSingleObject(pi_1.hProcess, INFINITE);
+	WaitForSingleObject(pi_2.hProcess, INFINITE);
+
+	WaitForSingleObject(hMutex, INFINITE);
+
+	if (strlen(shared_data) > 0) {
+		printf("All messages from clients:\n%s", shared_data);
+		shared_data[0] = '\0';
+	}
+	else {
+		printf("No messages received\n");
+	}
+
+	ReleaseMutex(hMutex);
+
+	CloseHandle(pi_1.hProcess);
+	CloseHandle(pi_2.hProcess);
+	CloseHandle(pi_1.hThread);
+	CloseHandle(pi_2.hThread);
+
+	UnmapViewOfFile(shared_data);
+	CloseHandle(hMapFile);
+	return 0;
 }
