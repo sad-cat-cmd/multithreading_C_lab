@@ -3,15 +3,8 @@
 #include <Windows.h>
 #include <stdlib.h>
 
-#define COUNT_PROCESSES_OBJECT 3
-
 TCHAR MUTEX_NAME[] = TEXT("mutex_MMF");
 TCHAR lpFileShareName[] = TEXT("$MyVerySpecialFileShareName$");
-
-inline int create_open_MMF(HANDLE *hMapFile, char **shared_data) {
-	return 1; 
-}
-
 
 int main() {
 	STARTUPINFO client_1, client_2;
@@ -53,7 +46,7 @@ int main() {
 		return 1;
 	}
 
-	if (CreateProcess(L"C:\\Users\\B-ZONE\\Desktop\\SPO_GIT\\multithreading_C_lab\\App_3\\Project1\\client.exe", L"client.exe 1", NULL, NULL, FALSE, 0, NULL, NULL, &client_1, &pi_1)) {
+	if (CreateProcess(L"C:\\Users\\win_\\Desktop\\multithreading_C_lab\\App_3\\Project1\\client.exe", L"client.exe 1", NULL, NULL, FALSE, 0, NULL, NULL, &client_1, &pi_1)) {
 		printf("Client 1 is started\n");
 	}
 	else {
@@ -61,15 +54,13 @@ int main() {
 		return 1;
 	}
 
-	if (CreateProcess(L"C:\\Users\\B-ZONE\\Desktop\\SPO_GIT\\multithreading_C_lab\\App_3\\Project1\\client.exe", L"client.exe 2", NULL, NULL, FALSE, 0, NULL, NULL, &client_2, &pi_2)) {
+	if (CreateProcess(L"C:\\Users\\win_\\Desktop\\multithreading_C_lab\\App_3\\Project1\\client.exe", L"client.exe 2", NULL, NULL, FALSE, 0, NULL, NULL, &client_2, &pi_2)) {
 		printf("Client 2 is started\n");
 	}
 	else {
 		printf("Error: create Process CLIENT_1 %lu\n", GetLastError());
 		return 1;
 	}
-
-	int massege_count = 0;
 
 	WaitForSingleObject(pi_1.hProcess, INFINITE);
 	WaitForSingleObject(pi_2.hProcess, INFINITE);
