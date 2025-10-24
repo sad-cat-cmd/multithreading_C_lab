@@ -5,6 +5,8 @@
 
 TCHAR MUTEX_NAME[] = TEXT("mutex_MMF");
 TCHAR lpFileShareName[] = TEXT("$MyVerySpecialFileShareName$");
+bool status = FALSE;
+wchar_t client_name[MAX_PATH];
 
 int main() {
 	STARTUPINFO client_1, client_2;
@@ -62,17 +64,18 @@ int main() {
 		return 1;
 	}
 
-	WaitForSingleObject(pi_1.hProcess, INFINITE);
-	WaitForSingleObject(pi_2.hProcess, INFINITE);
+	//WaitForSingleObject(pi_1.hProcess, INFINITE);
+	//WaitForSingleObject(pi_2.hProcess, INFINITE);
 
-	WaitForSingleObject(hMutex, INFINITE);
-
-	if (strlen(shared_data) > 0) {
-		printf("All messages from clients:\n%s", shared_data);
-		shared_data[0] = '\0';
-	}
-	else {
-		printf("No messages received\n");
+	while (!status) {
+		WaitForSingleObject(hMutex, INFINITE);
+		if (strlen(shared_data) > 0) {
+			printf("All messages from clients:\n%s", shared_data);
+			shared_data[0] = '\0';
+		}
+		//else {
+		//	//printf("No messages received\n");
+		//}
 	}
 
 	ReleaseMutex(hMutex);

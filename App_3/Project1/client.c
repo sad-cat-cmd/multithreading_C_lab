@@ -5,6 +5,13 @@
 TCHAR MUTEX_NAME[] = TEXT("mutex_MMF");
 TCHAR lpFileShareName[] = TEXT("$MyVerySpecialFileShareName$");
 
+void write_message(char *ptr_message, int id_client) {
+	printf("Enter messege for client %d: ", id_client);
+	scanf("%s", ptr_message);
+	printf("Messenge is send from client 1\n");
+	return;
+}
+
 int main(int argc, char* argv[]) {
 	if (argc < 2) {
 		printf("The ID_client is not specified\n");
@@ -34,8 +41,11 @@ int main(int argc, char* argv[]) {
 
 	int current_length = strlen(shared_data);
 
+
 	for (int i = 0; i < 3; i++) {
-		char message[256];
+		char message[50];
+		write_message(message, client_id);
+
 		sprintf_s(message, sizeof(message), "Message %d from client %d\n", i + 1, client_id);
 
 		strcpy_s(shared_data + current_length, 4096 - current_length, message);
