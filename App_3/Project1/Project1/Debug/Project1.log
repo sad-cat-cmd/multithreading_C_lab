@@ -1,3 +1,5 @@
 ﻿  Source.c
-  LINK : не найден или не выполнена сборка C:\Users\win_\Desktop\multithreading_C_lab\App_3\Project1\Debug\Project1.exe при последней инкрементной компоновке; выполняется полная компоновка
+C:\Users\win_\Desktop\multithreading_C_lab\App_3\Project1\Source.c(37,18): warning C4047: функция: "wchar_t *" отличается по уровням косвенного обращения от "wchar_t (*)[260]"
+C:\Users\win_\Desktop\multithreading_C_lab\App_3\Project1\Source.c(37,18): warning C4024: get_client_name: различные типы для формального и фактического параметров 1
+C:\Users\win_\Desktop\multithreading_C_lab\App_3\Project1\Source.c(43,27): warning C4101: hWriteMutex: неиспользованная локальная переменная
   Project1.vcxproj -> C:\Users\win_\Desktop\multithreading_C_lab\App_3\Project1\Debug\Project1.exe

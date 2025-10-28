@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{D1D1E4FA-A2F6-4E25-A3A1-836744D47B72}|Project1.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\App_3\\Project1\\client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\App_3\\Project1\\Debug\\client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Debug\\client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,13 +24,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "client.c",
-              "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\App_3\\Project1\\client.c",
-              "RelativeDocumentMoniker": "client.c",
-              "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\App_3\\Project1\\client.c",
-              "RelativeToolTip": "client.c",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\App_3\\Project1\\Debug\\client.c",
+              "RelativeDocumentMoniker": "Debug\\client.c",
+              "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\App_3\\Project1\\Debug\\client.c",
+              "RelativeToolTip": "Debug\\client.c",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-10-21T10:59:30.318Z",
+              "WhenOpened": "2025-10-28T09:59:23.722Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\App_3\\Project1\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-10-21T10:59:30.76Z",
               "EditorCaption": ""

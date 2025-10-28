@@ -5,6 +5,7 @@
 
 TCHAR MUTEX_NAME[] = TEXT("mutex_MMF");
 TCHAR lpFileShareName[] = TEXT("$MyVerySpecialFileShareName$");
+
 BOOL status = false;
 typedef struct {
 	char message[256];
@@ -16,7 +17,7 @@ typedef struct {
 void write_message(char *ptr_message, int id_client) {
 	printf("Enter messege for client %d: ", id_client);
 	scanf("%s", ptr_message);
-	printf("Messenge is send from client 1\n");
+	printf("Messenge is send from client %d \n", id_client);
 	return;
 }
 
@@ -44,10 +45,9 @@ int main(int argc, char* argv[]) {
 		printf("Error: Client %d is not open mutex", client_id);
 		return 1;
 	}
-	
 
 	int current_length = strlen(shared_data->message);
-	char message[256];
+	char tmp_message[256];
 	while (!status)
 	{
 		if (shared_data->status_work) {
@@ -55,11 +55,10 @@ int main(int argc, char* argv[]) {
 			break;
 		}
 		if (!shared_data->data_ready) {
+			write_message(tmp_message, client_id);
 			WaitForSingleObject(hMutex, INFINITE);
 			if (!shared_data->data_ready) {
-				//WaitForSingleObject(hMutex, INFINITE);
-				write_message(shared_data->message, client_id);
-				
+				strcpy(shared_data->message, tmp_message);
 				if (shared_data->message[0] == '0') {
 					shared_data->status_work = true;
 					ReleaseMutex(hMutex);
@@ -67,8 +66,9 @@ int main(int argc, char* argv[]) {
 				}
 				shared_data->data_ready = true;
 				shared_data->number_clint = client_id;
-				//ReleaseMutex(hMutex);
 			}
+			else 
+				Sleep(100);
 			ReleaseMutex(hMutex);
 		}
 	}

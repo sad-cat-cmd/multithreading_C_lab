@@ -6,11 +6,11 @@
 #include <wchar.h>
 
 TCHAR MUTEX_NAME[] = TEXT("mutex_MMF");
+TCHAR mutex_write_function[] = TEXT("mutex_write");
 TCHAR lpFileShareName[] = TEXT("$MyVerySpecialFileShareName$");
 BOOL status = FALSE;
 wchar_t client_name[MAX_PATH];
 wchar_t module_file_name[MAX_PATH];
-
 typedef struct {
 	char message[256];
 	BOOL data_ready;
@@ -40,7 +40,7 @@ int main() {
 
 	STARTUPINFO client_1, client_2;
 	PROCESS_INFORMATION pi_1, pi_2;
-	HANDLE hMapFile, hMutex;
+	HANDLE hMapFile, hMutex, hWriteMutex;
 
 	ZeroMemory(&client_1, sizeof(client_1));
 	client_1.cb = sizeof(client_1);
@@ -70,25 +70,21 @@ int main() {
 	printf("Server is started\n");
 
 	hMutex = CreateMutex(NULL, FALSE, MUTEX_NAME);
-	
 	if (hMutex == NULL)
 	{
 		printf("CreateMutex error: %d\n", GetLastError());
 		return 1;
 	}
 
-	if (!CreateProcess(client_name, L"client.exe 1", NULL, NULL, FALSE, 0, NULL, NULL, &client_1, &pi_1)) {
+	if (!CreateProcess(client_name, L"client.exe 1", NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &client_1, &pi_1)) {
 		printf("Error: create Process CLIENT_1 %lu\n", GetLastError());
 		return 1;
 	}
 
-	if (!CreateProcess(client_name, L"client.exe 2", NULL, NULL, FALSE, 0, NULL, NULL, &client_2, &pi_2)) {
+	if (!CreateProcess(client_name, L"client.exe 2", NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &client_2, &pi_2)) {
 		printf("Error: create Process CLIENT_1 %lu\n", GetLastError());
 		return 1;
 	}
-
-	//WaitForSingleObject(pi_1.hProcess, INFINITE);
-	//WaitForSingleObject(pi_2.hProcess, INFINITE);
 
 	while (!status) {
 		if (shared_data->status_work) {
@@ -102,6 +98,8 @@ int main() {
 			shared_data->data_ready = false;
 			ReleaseMutex(hMutex);
 		}
+		else
+			Sleep(100);
 	}
 
 	CloseHandle(pi_1.hProcess);
