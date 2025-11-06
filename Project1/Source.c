@@ -4,7 +4,7 @@
 #include <conio.h>
 #include <sysinfoapi.h>
 
-unsigned int tiks_in_second = 10000000;
+unsigned int tiks_in_second = 10000;
 LPCWSTR SlotName = TEXT("\\\\.\\mailslot\\network_timesync");
 //LPCWSTR SlotName = TEXT("\\\\.\\mailslot\\network_timesync");
 size_t MaxCountMsg = 30;
@@ -123,11 +123,11 @@ int main() {
 	size_t count_msg = 0;
 
 	while (count_msg < MaxCountMsg) {
-		/*if (WaitForSingleObject(hTimer, 0) == WAIT_OBJECT_0) {
+		if (WaitForSingleObject(hTimer, 0) == WAIT_OBJECT_0) {
 			printf("!!! TIMEOUT: No messages received within 10 seconds !!!\n");
 			printf("Server stopping. Received: %zu/%zu messages\n", count_msg, MaxCountMsg);
 			break;
-		}*/
+		}
 		if (!check_status_MailSlot(hMailSlot)) {
 			if (!get_client_SystemTime(hMailSlot, &client_st)) {
 				GetSystemTime(&server_st);
@@ -135,6 +135,7 @@ int main() {
 				client_ui = convert_ST_in_UI(&client_st);
 				print_info(Differt_UI_in_sec(&server_ui, &client_ui));
 				count_msg++;
+				SetWaitableTimer(hTimer, &dueTime, 0, NULL, NULL, FALSE);
 			}
 			else
 				return 1;
