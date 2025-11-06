@@ -1,0 +1,2 @@
+#define DYNAMICDDL_API __declspec(dllexport)
+#define DYNAMICDDL_API __declspec(dllimport)

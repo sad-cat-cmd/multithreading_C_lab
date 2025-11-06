@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  dllmain.cpp
+  dynamic_DDL.cpp
+  Создание кода...
+     Создается библиотека C:\Users\win_\Desktop\multithreading_C_lab\app\x64\Debug\dynamicDDL.lib и объект C:\Users\win_\Desktop\multithreading_C_lab\app\x64\Debug\dynamicDDL.exp
+  dynamic_DDL.vcxproj -> C:\Users\win_\Desktop\multithreading_C_lab\app\x64\Debug\dynamicDDL.dll

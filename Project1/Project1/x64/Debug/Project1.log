@@ -1,6 +1,0 @@
-﻿  Source.c
-C:\Users\win_\Desktop\multithreading_C_lab\Project1\Source.c(9,22): warning C4101: tmp: неиспользованная локальная переменная
-C:\Users\win_\Desktop\multithreading_C_lab\Project1\Source.c(8,9): warning C4101: hMailSlot: неиспользованная локальная переменная
-C:\Users\win_\Desktop\multithreading_C_lab\Project1\Source.c(9,7): warning C4101: chBuffer: неиспользованная локальная переменная
-C:\Users\win_\Desktop\multithreading_C_lab\Project1\Source.c(10,8): warning C4101: dwBytesRead: неиспользованная локальная переменная
-  Project1.vcxproj -> C:\Users\win_\Desktop\multithreading_C_lab\Project1\x64\Debug\Project1.exe
