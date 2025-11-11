@@ -6,7 +6,6 @@
 
 unsigned int tiks_in_second = 10000;
 LPCWSTR SlotName = TEXT("\\\\.\\mailslot\\network_timesync");
-//LPCWSTR SlotName = TEXT("\\\\.\\mailslot\\network_timesync");
 size_t MaxCountMsg = 30;
 LARGE_INTEGER dueTime;
 LONGLONG time_timer = -100000000;
@@ -20,7 +19,6 @@ BOOL check_status_MailSlot(HANDLE hMailSlot) {
 		return TRUE;
 	}
 	if (next_size == MAILSLOT_NO_MESSAGE) {
-		//printf("No messages \n");
 		return TRUE;
 	}
 	return FALSE;
@@ -34,31 +32,6 @@ HANDLE WINAPI MakeSlot() {
 	}
 	return hMailSlot;
 }
-
-//HANDLE WINAPI MakeSlot() {
-//	SECURITY_DESCRIPTOR sd;
-//	InitializeSecurityDescriptor(&sd, SECURITY_DESCRIPTOR_REVISION);
-//	SetSecurityDescriptorDacl(&sd, TRUE, NULL, FALSE);
-//
-//	SECURITY_ATTRIBUTES sa;
-//	sa.nLength = sizeof(SECURITY_ATTRIBUTES);
-//	sa.lpSecurityDescriptor = &sd;
-//	sa.bInheritHandle = FALSE;
-//
-//	HANDLE hMailSlot = CreateMailslot(SlotName,
-//		0,
-//		MAILSLOT_WAIT_FOREVER,
-//		&sa);
-//
-//	if (hMailSlot == INVALID_HANDLE_VALUE) {
-//		printf("CreateMailslot failed with error: %d\n", GetLastError());
-//		return NULL;
-//	}
-//
-//	printf("Server: Mailslot created successfully\n");
-//	printf("Server: Waiting for connections at: %ls\n", SlotName);
-//	return hMailSlot;
-//}
 
 BOOL get_client_SystemTime(HANDLE hMailSlot, SYSTEMTIME *client_st) {	
 	DWORD bytes_read;

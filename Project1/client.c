@@ -5,8 +5,7 @@
 #include <sysinfoapi.h>
 
 unsigned int tiks_in_second = 10000000;
-//LPCTSTR SlotName = TEXT("\\\\192.168.56.1\\mailslot\\network_timesync");
-LPCTSTR SlotName = TEXT("\\\\.\\mailslot\\network_timesync");
+LPCTSTR SlotName = TEXT("\\\\DESKTOP-UQN8AN0\\mailslot\\network_timesync");
 size_t MaxCountMsg = 30;
 
 int main() {
