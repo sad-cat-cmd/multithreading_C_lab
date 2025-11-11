@@ -1,0 +1,3 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (hookDLL.dll.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  hookDLL.cpp
+  hookDLL.dll.vcxproj -> C:\Users\win_\Desktop\multithreading_C_lab\Project1\x64\Debug\hookDLLdll.dll
