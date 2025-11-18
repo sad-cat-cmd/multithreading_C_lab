@@ -1,0 +1,7 @@
+﻿  source.c
+  Previous IPDB not found, fall back to full compilation.
+LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/LTCG"
+  Создание кода
+  All 4 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  app.vcxproj -> C:\Users\win_\Desktop\multithreading_C_lab\app\x64\Release\app.exe

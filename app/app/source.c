@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <sysinfoapi.h>
 
-//#pragma comment (lib, "staticDDL.lib") 
-
 typedef HANDLE(WINAPI* P_CreateWaitTimer)();
 typedef HANDLE(WINAPI* P_MakeSlot)();
 typedef BOOL(WINAPI* P_check_status_MailSlot)(HANDLE);

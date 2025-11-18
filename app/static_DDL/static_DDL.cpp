@@ -1,7 +1,4 @@
-﻿// static_DDL.cpp : Определяет экспортируемые функции для DLL.
-//
-
-#include "pch.h"
+﻿#include "pch.h"
 #include "framework.h"
 #include "static_DDL.h"
 

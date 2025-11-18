@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89669983-E3C4-415D-835E-1C80571C2749}|app\\app.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\app\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{89669983-E3C4-415D-835E-1C80571C2749}|app\\app.vcxproj|solutionrelative:app\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FD2535C0-A4EC-410D-8EA8-47008D9DCD17}|static_DDL\\static_DDL.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\static_DDL\\static_DDL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FD2535C0-A4EC-410D-8EA8-47008D9DCD17}|static_DDL\\static_DDL.vcxproj|solutionrelative:static_DDL\\static_DDL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -19,19 +11,12 @@
       "RelativeMoniker": "D:0:0:{22149341-4DAB-4C62-9030-CC3067BC7C9C}|dynamic_DDL\\dynamic_DDL.vcxproj|solutionrelative:dynamic_DDL\\dynamic_DDL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22149341-4DAB-4C62-9030-CC3067BC7C9C}|dynamic_DDL\\dynamic_DDL.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\dynamic_DDL\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{22149341-4DAB-4C62-9030-CC3067BC7C9C}|dynamic_DDL\\dynamic_DDL.vcxproj|solutionrelative:dynamic_DDL\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{89669983-E3C4-415D-835E-1C80571C2749}|app\\app.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\app\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{89669983-E3C4-415D-835E-1C80571C2749}|app\\app.vcxproj|solutionrelative:app\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22149341-4DAB-4C62-9030-CC3067BC7C9C}|dynamic_DDL\\dynamic_DDL.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\dynamic_DDL\\dynamic_DDL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{22149341-4DAB-4C62-9030-CC3067BC7C9C}|dynamic_DDL\\dynamic_DDL.vcxproj|solutionrelative:dynamic_DDL\\dynamic_DDL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD2535C0-A4EC-410D-8EA8-47008D9DCD17}|static_DDL\\static_DDL.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\static_DDL\\static_DDL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FD2535C0-A4EC-410D-8EA8-47008D9DCD17}|static_DDL\\static_DDL.vcxproj|solutionrelative:static_DDL\\static_DDL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\win_\\Desktop\\SPO\\books\\cpp_Windows\\dll\\dll\\dll.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,110 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 217,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "pch.h",
-              "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\dynamic_DDL\\pch.h",
-              "RelativeDocumentMoniker": "dynamic_DDL\\pch.h",
-              "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\dynamic_DDL\\pch.h",
-              "RelativeToolTip": "dynamic_DDL\\pch.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-06T08:41:06.374Z"
+              "DocumentIndex": 0,
+              "Title": "static_DDL.cpp",
+              "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\static_DDL\\static_DDL.cpp",
+              "RelativeDocumentMoniker": "static_DDL\\static_DDL.cpp",
+              "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\static_DDL\\static_DDL.cpp",
+              "RelativeToolTip": "static_DDL\\static_DDL.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-18T08:21:06.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "dynamic_DDL.cpp",
               "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\dynamic_DDL\\dynamic_DDL.cpp",
               "RelativeDocumentMoniker": "dynamic_DDL\\dynamic_DDL.cpp",
               "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\dynamic_DDL\\dynamic_DDL.cpp",
               "RelativeToolTip": "dynamic_DDL\\dynamic_DDL.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-06T08:32:11.853Z"
+              "WhenOpened": "2025-11-18T08:15:17.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "client.c",
               "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\client.c",
               "RelativeDocumentMoniker": "client.c",
               "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\client.c",
               "RelativeToolTip": "client.c",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-11-06T08:26:19.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "source.c",
               "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\app\\source.c",
               "RelativeDocumentMoniker": "app\\source.c",
               "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\app\\source.c",
               "RelativeToolTip": "app\\source.c",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-05T11:53:47.351Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 183,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "dynamic_DDL.h",
-              "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\dynamic_DDL\\dynamic_DDL.h",
-              "RelativeDocumentMoniker": "dynamic_DDL\\dynamic_DDL.h",
-              "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\dynamic_DDL\\dynamic_DDL.h",
-              "RelativeToolTip": "dynamic_DDL\\dynamic_DDL.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-05T09:43:19.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "static_DDL.h",
-              "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\static_DDL\\static_DDL.h",
-              "RelativeDocumentMoniker": "static_DDL\\static_DDL.h",
-              "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\static_DDL\\static_DDL.h",
-              "RelativeToolTip": "static_DDL\\static_DDL.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-05T17:40:04.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "dll.cpp",
-              "DocumentMoniker": "C:\\Users\\win_\\Desktop\\SPO\\books\\cpp_Windows\\dll\\dll\\dll.cpp",
-              "RelativeDocumentMoniker": "..\\..\\SPO\\books\\cpp_Windows\\dll\\dll\\dll.cpp",
-              "ToolTip": "C:\\Users\\win_\\Desktop\\SPO\\books\\cpp_Windows\\dll\\dll\\dll.cpp",
-              "RelativeToolTip": "..\\..\\SPO\\books\\cpp_Windows\\dll\\dll\\dll.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-04T14:18:42.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "static_DDL.cpp",
-              "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\static_DDL\\static_DDL.cpp",
-              "RelativeDocumentMoniker": "static_DDL\\static_DDL.cpp",
-              "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\app\\static_DDL\\static_DDL.cpp",
-              "RelativeToolTip": "static_DDL\\static_DDL.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-05T17:40:08.551Z",
+              "WhenOpened": "2025-11-05T11:53:47.351Z",
               "EditorCaption": ""
             }
           ]
