@@ -7,5 +7,4 @@
 extern "C" {
 	HOOKDLLDLL_API BOOL installMouseHook();
 	HOOKDLLDLL_API BOOL removeMouseHook();
-	HOOKDLLDLL_API BOOL get_click_status();
 }

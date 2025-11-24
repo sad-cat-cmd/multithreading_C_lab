@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D61CFDC2-BEAD-412D-9983-F77386D77092}|Project1\\Project1.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\Project1\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D61CFDC2-BEAD-412D-9983-F77386D77092}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E02B483-367C-4597-9A2E-E330EAEEBD9A}|hookDLL.dll\\hookDLL.dll.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\hookDLL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1E02B483-367C-4597-9A2E-E330EAEEBD9A}|hookDLL.dll\\hookDLL.dll.vcxproj|solutionrelative:hookDLL.dll\\hookDLL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,15 +15,11 @@
       "RelativeMoniker": "D:0:0:{1E02B483-367C-4597-9A2E-E330EAEEBD9A}|hookDLL.dll\\hookDLL.dll.vcxproj|solutionrelative:hookDLL.dll\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D61CFDC2-BEAD-412D-9983-F77386D77092}|Project1\\Project1.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\Project1\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D61CFDC2-BEAD-412D-9983-F77386D77092}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1E02B483-367C-4597-9A2E-E330EAEEBD9A}|hookDLL.dll\\hookDLL.dll.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\hookDLL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1E02B483-367C-4597-9A2E-E330EAEEBD9A}|hookDLL.dll\\hookDLL.dll.vcxproj|solutionrelative:hookDLL.dll\\hookDLL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\win_\\Desktop\\SPO\\books\\cpp_Windows\\dll\\dll\\dll.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E02B483-367C-4597-9A2E-E330EAEEBD9A}|hookDLL.dll\\hookDLL.dll.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\hookDLL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1E02B483-367C-4597-9A2E-E330EAEEBD9A}|hookDLL.dll\\hookDLL.dll.vcxproj|solutionrelative:hookDLL.dll\\hookDLL.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E02B483-367C-4597-9A2E-E330EAEEBD9A}|hookDLL.dll\\hookDLL.dll.vcxproj|C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -33,50 +33,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "hookDLL.h",
               "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\hookDLL.h",
               "RelativeDocumentMoniker": "hookDLL.dll\\hookDLL.h",
               "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\hookDLL.h",
               "RelativeToolTip": "hookDLL.dll\\hookDLL.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-06T15:49:04.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "dllmain.cpp",
               "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\dllmain.cpp",
               "RelativeDocumentMoniker": "hookDLL.dll\\dllmain.cpp",
               "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\dllmain.cpp",
               "RelativeToolTip": "hookDLL.dll\\dllmain.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-06T15:23:00.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "hookDLL.cpp",
               "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\hookDLL.cpp",
               "RelativeDocumentMoniker": "hookDLL.dll\\hookDLL.cpp",
               "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\hookDLL.dll\\hookDLL.cpp",
               "RelativeToolTip": "hookDLL.dll\\hookDLL.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-06T15:22:59.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "dll.cpp",
               "DocumentMoniker": "C:\\Users\\win_\\Desktop\\SPO\\books\\cpp_Windows\\dll\\dll\\dll.cpp",
               "RelativeDocumentMoniker": "..\\..\\SPO\\books\\cpp_Windows\\dll\\dll\\dll.cpp",
@@ -97,17 +97,18 @@
               "RelativeToolTip": "hookDLL.dll\\pch.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-06T19:00:31.772Z"
+              "WhenOpened": "2025-11-06T19:00:31.772Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Source.c",
               "DocumentMoniker": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\Project1\\Source.c",
               "RelativeDocumentMoniker": "Project1\\Source.c",
-              "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\Project1\\Source.c",
-              "RelativeToolTip": "Project1\\Source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\win_\\Desktop\\multithreading_C_lab\\Project1\\Project1\\Source.c*",
+              "RelativeToolTip": "Project1\\Source.c*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-11-06T15:21:50.936Z",
               "EditorCaption": ""
